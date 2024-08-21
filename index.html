@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Modal</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <button onclick="openModal()" id="openModalbutton" class="openModalbutton">Open Modal</button>
+    <div id="Modal" class="Modal">
+        <div class="modal_content">
+
+            <span onclick="closeModal()" id="closeModalbtn" class="close">&times;</span>
+
+            <h2>Delete (PT1) Prototype</h2> 
+            <p>Warning: this cannot be undone.</p>
+
+            <ul>
+                <li>All share links will be inaccessible</li>
+                <li>All prototype comments and history will be destroyed</li>
+                <li>All screens and hotspots will be deleted</li>
+            </ul>
+            <div class="buttons">
+                <button onclick="closeModal()" class="danger">Yes, Delete Prototype</button>
+                <button onclick="closeModal()" class="cancel">Cancel, Keep Prototype</button>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+</html>
